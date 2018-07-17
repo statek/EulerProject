@@ -1,9 +1,6 @@
+.lib/
+.out/
 # Intellij
 .idea/
 *.iml
 *.iws
-
-.out/
-
-#libs
-.lib/

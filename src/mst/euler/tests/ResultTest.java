@@ -2,6 +2,7 @@ package mst.euler.tests;
 
 
 import mst.euler.solutions.*;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
@@ -308,4 +309,60 @@ public final class ResultTest {
         assertEquals("26033", new s060().solve());
     }
 
+
+    @Test
+    public void problem061SolutionTest() {
+        assertEquals("28684", new s061().solve());
+    }
+
+    @Test
+    public void problem062SolutionTest() {
+        assertEquals("127035954683", new s062().solve());
+    }
+
+    @Test
+    public void problem063SolutionTest() {
+        assertEquals("49", new s063().solve());
+    }
+
+    @Ignore // not yet solved
+    @Test
+    public void problem064SolutionTest() {
+        assertEquals("", new s064().solve());
+    }
+
+    @Ignore // not yet solved
+    @Test
+    public void problem065SolutionTest() {
+        assertEquals("", new s065().solve());
+    }
+
+    @Ignore // not yet solved
+    @Test
+    public void problem066SolutionTest() {
+        assertEquals("", new s066().solve());
+    }
+
+    @Ignore // not yet solved
+    @Test
+    public void problem067SolutionTest() {
+        assertEquals("", new s067().solve());
+    }
+
+    @Test
+    public void problem068SolutionTest() {
+        assertEquals("6531031914842725", new s068().solve());
+    }
+
+    @Ignore // not yet solved
+    @Test
+    public void problem069SolutionTest() {
+        assertEquals("", new s069().solve());
+    }
+
+    @Ignore // not yet solved
+    @Test
+    public void problem070SolutionTest() {
+        assertEquals("", new s070().solve());
+    }
 }
