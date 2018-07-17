@@ -1,5 +1,13 @@
-.lib/
-.out/
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
+# Unused Folders
+out/*
+lib/*
+
 # Intellij
 .idea/
 *.iml
