@@ -2,9 +2,10 @@ package mst.euler.solutions;
 
 import mst.euler.Solution;
 
-import java.util.List;
+import java.util.Set;
 
-import static mst.euler.Lib.eulersTotient;
+import static java.lang.Math.sqrt;;
+import static mst.euler.Lib.prepareSieve;
 
 public class s069 extends Solution {
 
@@ -14,19 +15,14 @@ public class s069 extends Solution {
 
     final long N = 1_000_000L;
 
-    @Override
+@Override
     public String solve() {
-        List<Long> phi = eulersTotient(N);
-        long n = 0;
-        double NPhi, maxNPhi = 0d;
-        for (int i = 1; i < phi.size(); i++) {
-            NPhi = (double) i / phi.get(i);
-            if (NPhi > maxNPhi) {
-                maxNPhi = NPhi;
-                n = i;
-            }
+        Set<Long> sieve = prepareSieve((long)sqrt(N));
+        long n = 1;
+        for (long prime : sieve){
+            if (n*prime>N) break;
+            n*=prime;
         }
         return String.valueOf(n);
     }
-
 }
