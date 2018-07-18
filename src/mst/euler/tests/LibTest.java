@@ -3,8 +3,7 @@ package mst.euler.tests;
 import org.junit.Test;
 
 import static junit.framework.Assert.assertEquals;
-import static mst.euler.Lib.isPalindrome;
-import static mst.euler.Lib.isPrime;
+import static mst.euler.Lib.*;
 
 public class LibTest {
     @Test
@@ -18,5 +17,16 @@ public class LibTest {
         assertEquals("false", String.valueOf(isPalindrome("123")));
         assertEquals("true" , String.valueOf(isPalindrome("12321")));
     }
+
+    @Test
+    public void gcdTest() {
+        assertEquals("11", String.valueOf(gcd(121,99)));
+        assertEquals("1" , String.valueOf(gcd(121,93)));
+    }
+    @Test
+    public void eulersTotientTest() {
+        assertEquals("[1, 1, 1, 2, 2, 4, 2, 6, 4, 6, 4]", String.valueOf(eulersTotient(10)));
+    }
+
 
 }
