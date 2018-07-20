@@ -92,27 +92,4 @@ public class Lib {
         long r = a % b;
         return (r == 0) ? b : gcd(b, r);
     }
-
-    public static List<Long> eulersTotient(long n) {
-        Set<Long> sieve = prepareSieve(n);
-        ArrayList<Long> phi = new ArrayList<>();
-        phi.add(1L);
-        phi.add(1L);
-        phi.add(1L);
-        for (int i = 3; i <= n; i++) {
-            if (i % 1_000 == 0) System.out.println(now() + "\t" + (double) 100 * i / n + "%");
-            long iPhi = i;
-            if (sieve.contains(i)) {
-                iPhi--;
-            } else {
-                for (int d = 1; d < i / 2 + 1; d++) {
-                    if (i % d == 0) {
-                        iPhi -= phi.get(d);
-                    }
-                }
-            }
-            phi.add(iPhi);
-        }
-        return phi;
-    }
 }

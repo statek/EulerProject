@@ -23,10 +23,4 @@ public class LibTest {
         assertEquals("11", String.valueOf(gcd(121,99)));
         assertEquals("1" , String.valueOf(gcd(121,93)));
     }
-    @Test
-    public void eulersTotientTest() {
-        assertEquals("[1, 1, 1, 2, 2, 4, 2, 6, 4, 6, 4]", String.valueOf(eulersTotient(10)));
-    }
-
-
 }

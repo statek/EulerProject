@@ -353,15 +353,13 @@ public final class ResultTest {
         assertEquals("6531031914842725", new s068().solve());
     }
 
-    @Ignore // 22 min
     @Test
     public void problem069SolutionTest() {
         assertEquals("510510", new s069().solve());
     }
 
-    @Ignore // not yet solved
     @Test
     public void problem070SolutionTest() {
-        assertEquals("", new s070().solve());
+        assertEquals("8319823", new s070().solve());
     }
 }
