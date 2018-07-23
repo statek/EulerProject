@@ -62,6 +62,6 @@ public class Fraction implements Comparable<Fraction> {
     @Override
     public int hashCode() {
 
-        return Objects.hash(n, d);
+        return Objects.hash(doubleValue());
     }
 }
