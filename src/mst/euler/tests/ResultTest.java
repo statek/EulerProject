@@ -377,4 +377,15 @@ public final class ResultTest {
         assertEquals("7295372", new s073().solve());
     }
 
+    @Test
+    public void problem074SolutionTest() {
+        assertEquals("402", new s074().solve());
+    }
+
+    @Ignore // not yet solved
+    @Test
+    public void problem075SolutionTest() {
+        assertEquals("", new s075().solve());
+    }
+
 }
