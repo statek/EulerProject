@@ -1,12 +1,10 @@
 package mst.euler.solutions;
 
 import mst.euler.Solution;
-import mst.euler.utils.Fraction;
 
 import java.util.*;
 
 import static mst.euler.Lib.factorial;
-import static mst.euler.Lib.gcd;
 
 public class s074 extends Solution {
 
