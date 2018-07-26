@@ -2,10 +2,10 @@ package mst.euler.solutions;
 
 import mst.euler.Solution;
 
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map;
+import java.util.ArrayList;
 import java.util.Set;
+
+import static mst.euler.Lib.prepareSieve;
 
 public class s077 extends Solution {
 
@@ -13,35 +13,31 @@ public class s077 extends Solution {
         System.out.println(new s077().run());
     }
 
-    private final long N = 1_500_000L;
-
-    private Map<Long, Set<Set<Long>>> validLengths = new HashMap<>();
+    private int counter = 0;
+    private Set<Long> sieve = prepareSieve(100);
 
     @Override
     public String solve() {
-        long k, l, a, b, c;
-        for (long n = 1; n < N / 3; n++) {
-            for (long m = 1; m < n; m++) {
-                a = n * n - m * m;
-                b = 2 * n * m;
-                c = n * n + m * m;
-                l = a + b + c;
-                k = 1;
-                if (l > N) break;
-                while (k * l < N) {
-                    if (!validLengths.containsKey(k * l)) {
-                        validLengths.put(k * l, new HashSet<>());
-                    }
-                    Set<Long> triple = new HashSet<>();
-                    triple.add(a * k);
-                    triple.add(b * k);
-                    triple.add(c * k);
-                    validLengths.get(k * l).add(triple);
-                    k++;
-                }
+        long n = 10;
+        while (counter<5_000){
+            n++;
+            counter=0;
+            findSumDecomposition(0, n-1,n);
+        }
+        return String.valueOf(n);
+    }
+
+    private long findSumDecomposition(long sum, long l, long n) {
+        if (sum < n) {
+            for (long p : sieve){
+                if (p>l) break;
+                findSumDecomposition(sum + p, p, n);
             }
         }
-        return String.valueOf(validLengths.entrySet().stream().filter(e -> e.getValue().size() == 1).count());
+        if (sum == n) {
+            counter++;
+        }
+        return counter;
     }
 
 }

@@ -2,8 +2,6 @@ package mst.euler.solutions;
 
 import mst.euler.Solution;
 
-import java.util.ArrayList;
-
 public class s076 extends Solution {
 
     public static void main(String[] args) {
@@ -11,28 +9,24 @@ public class s076 extends Solution {
     }
 
     private final int N = 100;
-    //private final int N = 5;
-    private int counter = 0;
-    private ArrayList<Integer> decomposition = new ArrayList<>();
 
     @Override
     public String solve() {
-        findSumDecomposition(0, N - 1);
-        return String.valueOf(counter);
+        return String.valueOf(findSumDecomposition(N));
     }
 
-    private void findSumDecomposition(int sum, int l) {
-        if (sum < N) {
-            for (int i = l; i > 0; i--) {
-                decomposition.add(i);
-                findSumDecomposition(sum + i, i);
-                decomposition.remove((Integer) i);
-            }
+    private long findSumDecomposition(int n) {
+        long sum = -1;
+        for (int k = 1; k <= n; k++) {
+            sum += p(n, k);
         }
-        if (sum == N) {
-            System.out.println(decomposition);
-            counter++;
-        }
+        return sum;
     }
 
+    private long p(int n, int k) {
+        if (k == 1) return 1;
+        if (n == k) return 1;
+        if (k > n) return 0;
+        return p(n - 1, k - 1) + p(n - k, k);
+    }
 }
