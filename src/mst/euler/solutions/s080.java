@@ -51,7 +51,6 @@ public class s080 extends Solution {
             p = p.multiply(BigInteger.TEN).add(x);
             r = c.subtract(y);
         }
-        System.out.println(n+"\t"+sb+"\t"+sumDigits(sb.toString()));
         return sumDigits(sb.substring(sb.indexOf(".")+1));
     }
 }
