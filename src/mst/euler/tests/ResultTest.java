@@ -325,10 +325,9 @@ public final class ResultTest {
         assertEquals("49", new s063().solve());
     }
 
-    @Ignore // not yet solved
     @Test
     public void problem064SolutionTest() {
-        assertEquals("", new s064().solve());
+        assertEquals("1322", new s064().solve());
     }
 
     @Test
