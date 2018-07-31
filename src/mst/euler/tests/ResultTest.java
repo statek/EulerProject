@@ -417,8 +417,19 @@ public final class ResultTest {
     }
 
     @Test
+    public void problem089SolutionTest() {
+        assertEquals("743", new s089().solve());
+    }
+
+    @Test
     public void problem092SolutionTest() {
         assertEquals("8581146", new s092().solve());
+    }
+
+    @Ignore // not yet solved
+    @Test
+    public void problem096SolutionTest() {
+        assertEquals("", new s096().solve());
     }
 
     @Test
