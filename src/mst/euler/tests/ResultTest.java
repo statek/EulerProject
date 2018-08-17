@@ -309,7 +309,6 @@ public final class ResultTest {
         assertEquals("26033", new s060().solve());
     }
 
-
     @Test
     public void problem061SolutionTest() {
         assertEquals("28684", new s061().solve());
@@ -411,62 +410,62 @@ public final class ResultTest {
         assertEquals("40886", new s080().solve());
     }
 
-    @Ignore
-    @Test
-    public void problem081SolutionTest() {
-        assertEquals("", new s081().solve());
-    }
-
-    @Ignore
-    @Test
-    public void problem082SolutionTest() {
-        assertEquals("", new s082().solve());
-    }
-
-    @Ignore
-    @Test
-    public void problem083SolutionTest() {
-        assertEquals("", new s083().solve());
-    }
-
-    @Ignore
-    @Test
-    public void problem084SolutionTest() {
-        assertEquals("", new s084().solve());
-    }
+//    @Ignore
+//    @Test
+//    public void problem081SolutionTest() {
+//        assertEquals("", new s081().solve());
+//    }
+//
+//    @Ignore
+//    @Test
+//    public void problem082SolutionTest() {
+//        assertEquals("", new s082().solve());
+//    }
+//
+//    @Ignore
+//    @Test
+//    public void problem083SolutionTest() {
+//        assertEquals("", new s083().solve());
+//    }
+//
+//    @Ignore
+//    @Test
+//    public void problem084SolutionTest() {
+//        assertEquals("", new s084().solve());
+//    }
 
     @Test
     public void problem085SolutionTest() {
         assertEquals("2772", new s085().solve());
     }
 
-    @Ignore
-    @Test
-    public void problem086SolutionTest() {
-        assertEquals("", new s086().solve());
-    }
+//    @Ignore
+//    @Test
+//    public void problem086SolutionTest() {
+//        assertEquals("", new s086().solve());
+//    }
 
     @Test
     public void problem087SolutionTest() {
         assertEquals("1097343", new s087().solve());
     }
 
-    @Ignore
-    @Test
-    public void problem088SolutionTest() {
-        assertEquals("", new s088().solve());
-    }
+//    @Ignore
+//    @Test
+//    public void problem088SolutionTest() {
+//        assertEquals("", new s088().solve());
+//    }
 
     @Test
     public void problem089SolutionTest() {
         assertEquals("743", new s089().solve());
     }
 
-    @Ignore
-    @Test
-    public void problem090SolutionTest() {
-        assertEquals("", new s090().solve());
-    }
+//    @Ignore
+//    @Test
+//    public void problem090SolutionTest() {
+//        assertEquals("", new s090().solve());
+//    }
 
     @Test
     public void problem091SolutionTest() {
@@ -478,11 +477,11 @@ public final class ResultTest {
         assertEquals("8581146", new s092().solve());
     }
 
-    @Ignore
-    @Test
-    public void problem093SolutionTest() {
-        assertEquals("", new s093().solve());
-    }
+//    @Ignore
+//    @Test
+//    public void problem093SolutionTest() {
+//        assertEquals("", new s093().solve());
+//    }
 
     @Test
     public void problem094SolutionTest() {
@@ -504,21 +503,25 @@ public final class ResultTest {
         assertEquals("8739992577", new s097().solve());
     }
 
-    @Ignore
-    @Test
-    public void problem098SolutionTest() {
-        assertEquals("", new s098().solve());
-    }
+//    @Ignore
+//    @Test
+//    public void problem098SolutionTest() {
+//        assertEquals("", new s098().solve());
+//    }
 
     @Test
     public void problem099SolutionTest() {
         assertEquals("709", new s099().solve());
     }
 
-    @Ignore
-    @Test
-    public void problem100SolutionTest() {
-        assertEquals("", new s100().solve());
-    }
+//    @Ignore
+//    @Test
+//    public void problem100SolutionTest() {
+//        assertEquals("", new s100().solve());
+//    }
 
+    @Test
+    public void problem206SolutionTest() {
+        assertEquals("1389026630", new s206().solve());
+    }
 }
