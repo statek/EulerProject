@@ -1,9 +1,9 @@
 package mst.euler.tests;
 
-import mst.euler.solutions.*;
-import org.junit.jupiter.api.Test;
+import static org.junit.Assert.assertEquals;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import mst.euler.solutions.*;
+import org.junit.Test;
 
 public class t000 {
     @Test
