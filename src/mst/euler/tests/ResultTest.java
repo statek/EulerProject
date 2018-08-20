@@ -524,4 +524,9 @@ public final class ResultTest {
     public void problem206SolutionTest() {
         assertEquals("1389026630", new s206().solve());
     }
+
+    @Test
+    public void problem387SolutionTest() {
+        assertEquals("696067597313468", new s387().solve());
+    }
 }
