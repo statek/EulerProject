@@ -526,8 +526,13 @@ public final class ResultTest {
     }
 
     @Test
+    public void problem205SolutionTest() {
+        assertEquals("0.5731441", new s205().solve());
+    }
+
+    @Test
     public void problem206SolutionTest() {
-        assertEquals("1389026630", new s206().solve());
+        assertEquals("1389019170", new s206().solve());
     }
 
     @Test

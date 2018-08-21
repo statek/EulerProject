@@ -29,7 +29,6 @@ public class s206 extends Solution {
   }
 
   private boolean maskMatch(String val, String mask) {
-    System.out.print(val);
     List<String> v = Arrays.asList(val.split(""));
     List<String> m = Arrays.asList(mask.split(""));
     for (int i = 0; i<v.size(); i+=2) {
