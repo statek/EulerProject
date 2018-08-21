@@ -15,7 +15,6 @@ public class s387 extends Solution {
   }
 
   private final long MAX = 100_000_000_000_000l;
-//  private final long MAX = 10_000l;
 
   Set<Long> harshads = new HashSet<>();
 
@@ -66,16 +65,5 @@ public class s387 extends Solution {
       isHarshad &= isHarshad(num / 10);
     }
     return isHarshad;
-  }
-
-  private boolean isStrongHarshad(long num) {
-    boolean isStrongHarshad = true;
-    if (num > 0) {
-      int digitSum = sumDigits(String.valueOf(num));
-      isStrongHarshad &= num % digitSum == 0;
-      isStrongHarshad &= isPrime(num / digitSum);
-      isStrongHarshad &= isHarshad(num / 10);
-    }
-    return isStrongHarshad;
   }
 }
