@@ -410,24 +410,22 @@ public final class ResultTest {
         assertEquals("40886", new s080().solve());
     }
 
-//    @Ignore
-//    @Test
-//    public void problem081SolutionTest() {
-//        assertEquals("", new s081().solve());
-//    }
-//
-//    @Ignore
-//    @Test
-//    public void problem082SolutionTest() {
-//        assertEquals("", new s082().solve());
-//    }
-//
-//    @Ignore
-//    @Test
-//    public void problem083SolutionTest() {
-//        assertEquals("", new s083().solve());
-//    }
-//
+
+    @Test
+    public void problem081SolutionTest() {
+        assertEquals("427337", new s081().solve());
+    }
+
+    @Test
+    public void problem082SolutionTest() {
+        assertEquals("260324", new s082().solve());
+    }
+
+    @Test
+    public void problem083SolutionTest() {
+        assertEquals("425185", new s083().solve());
+    }
+
 //    @Ignore
 //    @Test
 //    public void problem084SolutionTest() {
