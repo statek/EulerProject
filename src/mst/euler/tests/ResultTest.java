@@ -534,6 +534,11 @@ public final class ResultTest {
     }
 
     @Test
+    public void problem345SolutionTest() {
+        assertEquals("13938", new s345().solve());
+    }
+
+    @Test
     public void problem346SolutionTest() {
         assertEquals("336108797689259276", new s346().solve());
     }
