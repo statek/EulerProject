@@ -72,8 +72,8 @@ public class s504 extends Solution {
             if (squares.contains(containPoints)) {
               squareWays++;
             }
+            ways++;
           }
-          ways++;
         }
       }
     }
