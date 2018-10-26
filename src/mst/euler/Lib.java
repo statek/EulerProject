@@ -88,6 +88,15 @@ public class Lib {
         return sum;
     }
 
+    public static long sumDigits(long num) {
+        int sum = 0;
+        while (num>0){
+            sum+=num%10;
+            num/=10;
+        }
+        return sum;
+    }
+
     public static long gcd(long a, long b) {
         long r = a % b;
         return (r == 0) ? b : gcd(b, r);
