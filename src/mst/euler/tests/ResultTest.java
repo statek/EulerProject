@@ -500,11 +500,10 @@ public final class ResultTest {
     assertEquals("8739992577", new s097().solve());
   }
 
-//    @Ignore
-//    @Test
-//    public void problem098SolutionTest() {
-//        assertEquals("", new s098().solve());
-//    }
+  @Test
+  public void problem098SolutionTest() {
+    assertEquals("18769", new s098().solve());
+  }
 
   @Test
   public void problem099SolutionTest() {
