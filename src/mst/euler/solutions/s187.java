@@ -2,6 +2,9 @@ package mst.euler.solutions;
 
 import static mst.euler.Lib.prepareSieve;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 import java.util.Set;
 import mst.euler.Solution;
 
@@ -11,7 +14,7 @@ public class s187 extends Solution {
     System.out.println(new s187().run());
   }
 
-  private Set<Long> sieve;
+  private List<Long> sieve;
   private final int N = 100_000_000;
   private int n = N;
 
@@ -21,19 +24,16 @@ public class s187 extends Solution {
 
   @Override
   public String solve() {
-    sieve = prepareSieve(n / 2);
+    sieve = new ArrayList<>(prepareSieve(n / 2));
+    Collections.sort(sieve);
     long cnt = 0;
-    int pcnt=0;
-    for (long p1 : sieve) {
-      System.out.print("\r"+100*pcnt++/sieve.size()+"%");
-      for (long p2 : sieve) {
-        if (p1 >= p2) {
-          long sp = p1 * p2;
-          if (sp <= n) {
-            cnt++;
-          }
-        }
+    int idx = sieve.size() - 1;
+    for (int pi=0; pi<sieve.size(); pi++) {
+      while (sieve.get(idx) > n / sieve.get(pi)) {
+        idx--;
       }
+      cnt += idx+1-pi;
+      if(idx<=pi) break;
     }
     return String.valueOf(cnt);
   }
