@@ -66,10 +66,11 @@ public class Lib {
     public static Set<Long> prepareSieve(long n) {
         Set<Long> hset = new HashSet<>();
         long tmp;
-        for (long i = 2L; i <= n; i++) {
+        hset.add(2l);
+        for (long i = 3L; i <= n; i+=2) {
             hset.add(i);
         }
-        for (long i = 2; i <= n; i++) {
+        for (long i = 3; i <= n; i++) {
             tmp = i + i;
             while (tmp <= n) {
                 hset.remove(tmp);

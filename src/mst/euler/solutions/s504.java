@@ -1,13 +1,10 @@
 package mst.euler.solutions;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Map;
 import java.util.Objects;
 import java.util.Set;
-import javafx.util.Pair;
 import mst.euler.Solution;
 
 public class s504 extends Solution {
@@ -18,7 +15,7 @@ public class s504 extends Solution {
 
   private final int M = 100;
   private int m = M;
-  private Map<Pair<Integer, Integer>, Integer> trianglePointsMap = new HashMap<>();
+  private Map<Pair, Integer> trianglePointsMap = new HashMap<>();
   private Set<Integer> squares = new HashSet<>();
   int ways = 0;
   int squareWays = 0;
@@ -81,7 +78,7 @@ public class s504 extends Solution {
   }
 
   private int calculatePoints(int a, int b) {
-    Pair<Integer, Integer> pair = new Pair<>(a, b);
+    Pair pair = new Pair(a, b);
     if (!trianglePointsMap.containsKey(pair)) {
       int points = 0;
       for (double i = 1; i < a; i++) {
@@ -89,8 +86,37 @@ public class s504 extends Solution {
         points += (p == Math.floor(p)) ? (int) p - 1 : (int) p;
       }
       trianglePointsMap.put(pair, points);
-      trianglePointsMap.put(new Pair<>(b, a), points);
+      trianglePointsMap.put(new Pair(b, a), points);
     }
     return trianglePointsMap.get(pair);
+  }
+
+  private class Pair {
+
+    Integer a, b;
+
+    Pair(int a, int b) {
+      this.a = a;
+      this.b = b;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+      if (this == o) {
+        return true;
+      }
+      if (o == null || getClass() != o.getClass()) {
+        return false;
+      }
+      Pair pair = (Pair) o;
+      return Objects.equals(a, pair.a) &&
+          Objects.equals(b, pair.b);
+    }
+
+    @Override
+    public int hashCode() {
+
+      return Objects.hash(a, b);
+    }
   }
 }
