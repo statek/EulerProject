@@ -436,10 +436,10 @@ public final class ResultTest {
     assertEquals("2772", new s085().solve());
   }
 
-    @Test
-    public void problem086SolutionTest() {
-        assertEquals("1818", new s086().solve());
-    }
+  @Test
+  public void problem086SolutionTest() {
+    assertEquals("1818", new s086().solve());
+  }
 
   @Test
   public void problem087SolutionTest() {
@@ -473,11 +473,10 @@ public final class ResultTest {
     assertEquals("8581146", new s092().solve());
   }
 
-//    @Ignore
-//    @Test
-//    public void problem093SolutionTest() {
-//        assertEquals("", new s093().solve());
-//    }
+  @Test
+  public void problem093SolutionTest() {
+    assertEquals("1258", new s093().solve());
+  }
 
   @Test
   public void problem094SolutionTest() {
