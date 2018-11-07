@@ -1,5 +1,7 @@
 package mst.euler.solutions;
 
+import static mst.euler.Lib.isPrime;
+
 import java.math.BigInteger;
 import mst.euler.Solution;
 
@@ -9,28 +11,28 @@ public class s123 extends Solution {
     System.out.println(new s123().run());
   }
 
-  private final BigInteger R = BigInteger.TEN.pow(10);
-  private BigInteger r = R;
+  private final long R = 10_000_000_000l;
+  private long r = R;
 
-  public void setR(BigInteger r) {
+  public void setR(long r) {
     this.r = r;
   }
 
   @Override
   public String solve() {
-    BigInteger reminder = BigInteger.ZERO;
-    BigInteger p = BigInteger.ONE.add(BigInteger.ONE);
-    int n = 1;
-    while (reminder.subtract(r).signum() < 0) {
-      p = p.nextProbablePrime();
-      n++;
-      if (p.pow(2).subtract(r).signum() < 0) {
-        continue;
+    long p = 3;
+    long n = 2;
+    long reminder = 0;
+    while (reminder < r) {
+      if (isPrime(p)) {
+        n++;
+        if (n % 2 == 0) {
+          reminder = p * (2 * n % p);
+        }
       }
-      reminder = p.subtract(BigInteger.ONE).pow(n).add(p.add(BigInteger.ONE).pow(n)).mod(p.pow(2));
+      p += 2;
     }
-
-    return String.valueOf(n);
+    return String.valueOf(n-1);
   }
 
 }

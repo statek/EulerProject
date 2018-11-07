@@ -11,7 +11,7 @@ public class t123 {
   @Test
   public void primeSquareReminders() {
     s123 s = new s123();
-    s.setR(BigInteger.TEN.pow(9));
+    s.setR(1_000_000_000l);
     assertEquals("7037", s.solve());
   }
 }
