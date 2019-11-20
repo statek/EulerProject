@@ -6,6 +6,7 @@
 
 # Unused Folders
 out/*
+target/*
 lib/*
 
 # Intellij
