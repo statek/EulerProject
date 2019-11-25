@@ -1,11 +1,123 @@
 package mst.euler.tests;
 
+import static org.junit.Assert.assertEquals;
 
-import mst.euler.solutions.*;
+import mst.euler.solutions.s001;
+import mst.euler.solutions.s002;
+import mst.euler.solutions.s003;
+import mst.euler.solutions.s004;
+import mst.euler.solutions.s005;
+import mst.euler.solutions.s006;
+import mst.euler.solutions.s007;
+import mst.euler.solutions.s008;
+import mst.euler.solutions.s009;
+import mst.euler.solutions.s010;
+import mst.euler.solutions.s011;
+import mst.euler.solutions.s012;
+import mst.euler.solutions.s013;
+import mst.euler.solutions.s014;
+import mst.euler.solutions.s015;
+import mst.euler.solutions.s016;
+import mst.euler.solutions.s017;
+import mst.euler.solutions.s018;
+import mst.euler.solutions.s019;
+import mst.euler.solutions.s020;
+import mst.euler.solutions.s021;
+import mst.euler.solutions.s022;
+import mst.euler.solutions.s023;
+import mst.euler.solutions.s024;
+import mst.euler.solutions.s025;
+import mst.euler.solutions.s026;
+import mst.euler.solutions.s027;
+import mst.euler.solutions.s028;
+import mst.euler.solutions.s029;
+import mst.euler.solutions.s030;
+import mst.euler.solutions.s031;
+import mst.euler.solutions.s032;
+import mst.euler.solutions.s033;
+import mst.euler.solutions.s034;
+import mst.euler.solutions.s035;
+import mst.euler.solutions.s036;
+import mst.euler.solutions.s037;
+import mst.euler.solutions.s038;
+import mst.euler.solutions.s039;
+import mst.euler.solutions.s040;
+import mst.euler.solutions.s041;
+import mst.euler.solutions.s042;
+import mst.euler.solutions.s043;
+import mst.euler.solutions.s044;
+import mst.euler.solutions.s045;
+import mst.euler.solutions.s046;
+import mst.euler.solutions.s047;
+import mst.euler.solutions.s048;
+import mst.euler.solutions.s049;
+import mst.euler.solutions.s050;
+import mst.euler.solutions.s051;
+import mst.euler.solutions.s052;
+import mst.euler.solutions.s053;
+import mst.euler.solutions.s054;
+import mst.euler.solutions.s055;
+import mst.euler.solutions.s056;
+import mst.euler.solutions.s057;
+import mst.euler.solutions.s058;
+import mst.euler.solutions.s059;
+import mst.euler.solutions.s060;
+import mst.euler.solutions.s061;
+import mst.euler.solutions.s062;
+import mst.euler.solutions.s063;
+import mst.euler.solutions.s064;
+import mst.euler.solutions.s065;
+import mst.euler.solutions.s066;
+import mst.euler.solutions.s067;
+import mst.euler.solutions.s068;
+import mst.euler.solutions.s069;
+import mst.euler.solutions.s070;
+import mst.euler.solutions.s071;
+import mst.euler.solutions.s072;
+import mst.euler.solutions.s073;
+import mst.euler.solutions.s074;
+import mst.euler.solutions.s075;
+import mst.euler.solutions.s076;
+import mst.euler.solutions.s077;
+import mst.euler.solutions.s078;
+import mst.euler.solutions.s079;
+import mst.euler.solutions.s080;
+import mst.euler.solutions.s081;
+import mst.euler.solutions.s082;
+import mst.euler.solutions.s083;
+import mst.euler.solutions.s085;
+import mst.euler.solutions.s086;
+import mst.euler.solutions.s087;
+import mst.euler.solutions.s089;
+import mst.euler.solutions.s091;
+import mst.euler.solutions.s092;
+import mst.euler.solutions.s093;
+import mst.euler.solutions.s094;
+import mst.euler.solutions.s095;
+import mst.euler.solutions.s096;
+import mst.euler.solutions.s097;
+import mst.euler.solutions.s098;
+import mst.euler.solutions.s099;
+import mst.euler.solutions.s100;
+import mst.euler.solutions.s102;
+import mst.euler.solutions.s104;
+import mst.euler.solutions.s112;
+import mst.euler.solutions.s119;
+import mst.euler.solutions.s123;
+import mst.euler.solutions.s124;
+import mst.euler.solutions.s125;
+import mst.euler.solutions.s145;
+import mst.euler.solutions.s187;
+import mst.euler.solutions.s203;
+import mst.euler.solutions.s205;
+import mst.euler.solutions.s206;
+import mst.euler.solutions.s345;
+import mst.euler.solutions.s346;
+import mst.euler.solutions.s347;
+import mst.euler.solutions.s387;
+import mst.euler.solutions.s504;
 import org.junit.Ignore;
 import org.junit.Test;
-
-import static org.junit.Assert.assertEquals;
 
 public final class ResultTest {
 
@@ -557,6 +669,11 @@ public final class ResultTest {
   @Test
   public void problem187SolutionTest() {
     assertEquals("17427258", new s187().solve());
+  }
+
+  @Test
+  public void problem203SolutionTest() {
+    assertEquals("34029210557338", new s203().solve());
   }
 
   @Test
