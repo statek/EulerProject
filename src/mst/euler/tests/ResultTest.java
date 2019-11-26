@@ -672,6 +672,11 @@ public final class ResultTest {
     assertEquals("17427258", new s187().solve());
   }
 
+//  @Test >3h
+//  public void problem191SolutionTest() {
+//    assertEquals("1918080160", new s191().solve());
+//  }
+
   @Test
   public void problem203SolutionTest() {
     assertEquals("34029210557338", new s203().solve());
