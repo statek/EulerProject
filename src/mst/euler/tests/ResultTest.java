@@ -105,6 +105,7 @@ import mst.euler.solutions.s112;
 import mst.euler.solutions.s116;
 import mst.euler.solutions.s117;
 import mst.euler.solutions.s119;
+import mst.euler.solutions.s121;
 import mst.euler.solutions.s123;
 import mst.euler.solutions.s124;
 import mst.euler.solutions.s125;
@@ -658,6 +659,11 @@ public final class ResultTest {
   public void problem119SolutionTest() {
     assertEquals("248155780267521", new s119().solve());
   }
+
+  @Test
+  public void problem121SolutionTest() {
+        assertEquals("2269", new s121().solve());
+    }
 
   @Test
   public void problem123SolutionTest() {
