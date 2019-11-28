@@ -101,6 +101,7 @@ import mst.euler.solutions.s099;
 import mst.euler.solutions.s100;
 import mst.euler.solutions.s102;
 import mst.euler.solutions.s104;
+import mst.euler.solutions.s105;
 import mst.euler.solutions.s112;
 import mst.euler.solutions.s116;
 import mst.euler.solutions.s117;
@@ -111,6 +112,7 @@ import mst.euler.solutions.s124;
 import mst.euler.solutions.s125;
 import mst.euler.solutions.s145;
 import mst.euler.solutions.s187;
+import mst.euler.solutions.s191;
 import mst.euler.solutions.s203;
 import mst.euler.solutions.s204;
 import mst.euler.solutions.s205;
@@ -636,6 +638,11 @@ public final class ResultTest {
   }
 
   @Test
+  public void problem105SolutionTest() {
+    assertEquals("73702", new s105().solve());
+  }
+
+  @Test
   public void problem104SolutionTest() {
     assertEquals("329468", new s104().solve());
   }
@@ -690,10 +697,11 @@ public final class ResultTest {
     assertEquals("17427258", new s187().solve());
   }
 
-//  @Test >3h
-//  public void problem191SolutionTest() {
-//    assertEquals("1918080160", new s191().solve());
-//  }
+  @Ignore // 3h
+  @Test
+  public void problem191SolutionTest() {
+    assertEquals("1918080160", new s191().solve());
+  }
 
   @Test
   public void problem203SolutionTest() {
